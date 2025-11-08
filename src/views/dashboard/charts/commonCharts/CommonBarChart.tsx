@@ -1,10 +1,10 @@
 import React from 'react'
-import type { CommonChartProps } from './Chart.types'
+import type {CommonBarChartProps} from "../types.d.ts/Chart.types"
 import type { ApexOptions } from 'apexcharts'
 import Chart from "react-apexcharts"
 
-const CommonBarChart: React.FC<CommonChartProps> = ({
-    title="Chart",
+const CommonBarChart: React.FC<CommonBarChartProps> = ({
+    title="Bar Chart",
     categories=[],
     series,
     height = 350,
@@ -12,7 +12,7 @@ const CommonBarChart: React.FC<CommonChartProps> = ({
 }) => {
     const options : ApexOptions = {
         chart : {
-            id : "common-bar",
+            id : "barchart",
             toolbar : {show : false},
         },
         title : {
