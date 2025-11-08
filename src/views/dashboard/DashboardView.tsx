@@ -9,8 +9,11 @@ import {
   columnData,
   pieSeries,
 } from "../../helper/index";
+import { useEffect } from "react";
 
 const DashboardView = () => {
+
+  useEffect(() => {console.log("this is barchart's series", barSeries)},[])
   return (
     <div
       className="w-full h-screen flex justify-center items-center text-white p-4"
@@ -21,7 +24,7 @@ const DashboardView = () => {
                 border"
       >
         <div className="flex gap-6">
-          <div className="flex-1 bg-white/70 backdrop-blur-lg p-4 rounded-xl">
+          <div className="flex-1 bg-white p-4 rounded-xl">
             <CommonBarChart
               title="Sales Bar Chart"
               categories={categories}

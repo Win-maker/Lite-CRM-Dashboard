@@ -9,7 +9,7 @@ export const CommonColumnChart: React.FC<
     chart: {
       id: "common-column",
       type: "bar",
-      stacked: stacked, 
+      stacked: stacked,
       toolbar: { show: false },
     },
     plotOptions: {
@@ -33,7 +33,7 @@ export const CommonColumnChart: React.FC<
   const series = [
     {
       name: title,
-      data: data, // expects array of { x, y, goals? }
+      data: data,
     },
   ];
 
